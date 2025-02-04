@@ -1,0 +1,49 @@
+.card-hover:hover {
+    box-shadow: 0 0 20px rgba(33, 37, 41, 0.7);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .custom-close {
+    filter: invert(1);
+  }
+
+.customContent {
+  box-shadow: 0 0 40px rgba(33, 37, 41, 0.7);
+}
+
+.custom-background {
+  background-image: url('./assets/bg-img.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.custom-bg-app {
+  background-image: url('./assets/bg-app-s.png');
+  background-repeat: repeat;
+  /* background-position: center; */
+  min-height: 100vh; /* Hace que siempre tenga la altura mínima de la pantalla */
+  width: 100%;
+
+}
+
+/* Estilo por defecto: Pantallas muy pequeñas */
+.size-image {
+  width: 50%; /* Se aplica cuando la pantalla es más pequeña que sm */
+}
+
+/* Para pantallas de tamaño 'sm' y mayores (desde 640px) */
+@media (min-width: 640px) {
+  .size-image{
+    width: 50%; /* 50% para pantallas pequeñas y medianas */
+  }
+}
+
+/* Para pantallas de tamaño 'md' y mayores (desde 768px) */
+@media (min-width: 768px) {
+  .size-image {
+    width: 25%; /* 25% para pantallas medianas y grandes */
+  }
+}
